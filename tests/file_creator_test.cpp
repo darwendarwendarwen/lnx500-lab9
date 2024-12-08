@@ -13,7 +13,7 @@ protected:
 
     file_creator_test()
     {
-
+       file_creator_test::file_creator("data.json")
     };
 
     void SetUp()
