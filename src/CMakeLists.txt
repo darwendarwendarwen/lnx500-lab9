@@ -11,6 +11,8 @@ if(OPENSSL_FOUND)
     message(STATUS "Using OpenSSL ${OPENSSL_VERSION}")
 endif()
 
+add_executable(main main.cpp file_creator.cpp)
+
 add_library(${PROJECT_NAME}-lib STATIC
     file_creator.cpp
 )
